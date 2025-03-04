@@ -1,13 +1,13 @@
 variable "name" {
   description = "(Optional) Name of the queue. Queue names must be made up of only uppercase and lowercase ASCII letters, numbers, underscores, and hyphens, and must be between 1 and 80 characters long. For a FIFO (first-in-first-out) queue, the name must end with the .fifo suffix. If omitted, Terraform will assign a random, unique name. Conflicts with name_prefix."
-  type = string
-  default = null
+  type        = string
+  default     = null
 }
 
 variable "content_based_deduplication" {
   description = "(Optional) Enables content-based deduplication for FIFO queues. For more information, see the related documentation."
-  type = bool
-  default = null
+  type        = bool
+  default     = null
 }
 
 variable "deduplication_scope" {
