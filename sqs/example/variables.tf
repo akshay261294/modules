@@ -1,7 +1,7 @@
 variable "region" {
   description = "Provides details about a specific AWS region."
-  type = string
-  default = "ap-south-1"
+  type        = string
+  default     = "ap-south-1"
 }
 
 locals {
@@ -13,6 +13,6 @@ locals {
   tags = {
     Environment = "production"
   }
-  fifo_queue = true
+  fifo_queue                  = true
   content_based_deduplication = true
 }
